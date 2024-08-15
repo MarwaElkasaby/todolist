@@ -1,0 +1,22 @@
+<!-- task.component.html -->
+<div class="task-card">
+    <div class="task-header">
+      <h3 class="task-title">{{ task.title }}</h3>
+      <span class="task-id">ID: {{ task.id }}</span>
+    </div>
+    <p class="task-description">{{ task.description }}</p>
+    <p class="task-duedate">Due: {{ task.duedate | date:'MMMM d, y' }} </p>
+    <div class="task-buttons">
+      <button (click)="onCompleteTask()" class="task-button complete-button">Done</button>
+      <button (click)="editTask()" class="task-button edit-button">Edit</button>
+      <button (click)="deleteTask()" class="task-button delete-button">Delete</button>
+    </div>
+    @if(isEditing){
+   <app-edit-task
+      [taskdata]="task"
+      (close)="onEditClose()">
+    </app-edit-task>
+ 
+    }
+  </div>
+  

@@ -1,0 +1,42 @@
+ .content-box {
+    position: relative; 
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 1rem;
+    background: #ffefef;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    height: 180px;
+}
+
+/* Styling for the title */
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+  
+/* Styling for the quote */
+.quote {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    margin-left: -50px;
+}
+  
+
+  .ima{
+    position: absolute;
+    top:10px;
+    left:850px
+  }
+
+  .bubble{
+    position: absolute;
+    top:-120px;
+    right:100px;
+  }

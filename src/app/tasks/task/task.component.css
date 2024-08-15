@@ -1,0 +1,128 @@
+/* Container for tasks */
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  /* Card for each task */
+  .task-card {
+    background: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Hover effect for task cards */
+  .task-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Task header styling */
+  .task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .task-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .task-id {
+    font-size: 0.875rem;
+    color: #888;
+  }
+  
+  /* Task description and due date styling */
+  .task-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .task-duedate {
+    font-size: 0.875rem;
+    color: #777;
+  }
+  
+  /* Container for task buttons */
+  .task-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  /* Styling for task buttons */
+  .task-button {
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .complete-button {
+    background-color: #4caf50;
+  }
+  
+  .complete-button:hover {
+    background-color: #45a049;
+  }
+  
+  .edit-button {
+    background-color: #ffa500;
+  }
+  
+  .edit-button:hover {
+    background-color: #e69500;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+  }
+  
+  .delete-button:hover {
+    background-color: #e53935;
+  }
+
+  .new-task-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Styling for the New Task button */
+  .new-task-button {
+    background-color: #fcd249; /* Soft orange */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    width:400px;
+    height: 50px;
+  }
+  
+  .new-task-button:hover {
+    background-color: #e9a847; /* Slightly darker orange */
+    transform: scale(1.05);
+  }
+  
+  .new-task-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.4); /* Focus ring with light orange */
+  }
