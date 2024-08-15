@@ -24,3 +24,5 @@ To set up this project locally, follow these steps:
 
 
   ## Demo video:
+https://github.com/user-attachments/assets/bb553425-5610-47ec-abec-97e62ed7002e
+
